@@ -8,11 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Nikhila Gonuguntla</h1>
-            <p><a href="mailto:nikhilagonuguntla@lewisu.edu">nikhilagonuguntla@lewisu.edu</a></p>
-            <p>Discord: nikhila_37</p>
-            <!-- <img src="me.png" alt="Nikhila Gonuguntla" style="width: 250px; height: auto; border-radius: 50%; margin-top: 20px;"> -->
+        <header class="header">
+            <img src="me.png" alt="Nikhila Gonuguntla" class="profile-pic">
+            <div class="header-text">
+                <h1>Nikhila Gonuguntla</h1>
+                <p><a href="mailto:nikhilagonuguntla@lewisu.edu">nikhilagonuguntla@lewisu.edu</a></p>
+                <p>Discord: nikhila_37</p>
+            </div>
         </header>
 
         <h2>Introduction</h2>
@@ -50,12 +52,13 @@
             </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropbtn">Fun Fact</button>
-            <div class="dropdown-content">
-                <p>I'm the first in my family to pursue higher education!</p>
-            </div>
-        </div>
+        <footer class="footer">
+            <p>Last modified: <span id="last-modified"></span></p>
+        </footer>
     </div>
+
+    <script>
+        document.getElementById("last-modified").innerText = document.lastModified;
+    </script>
 </body>
 </html>
